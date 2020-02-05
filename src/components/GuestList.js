@@ -25,7 +25,7 @@ class GuestList extends Component {
       this.props.guests.length < 1 ? (
         <div className="check-guest-text">
           <h1>
-            No Guests Were Regetired
+            No Guests Were Registered
             <br />
             To this Event Yet
           </h1>
