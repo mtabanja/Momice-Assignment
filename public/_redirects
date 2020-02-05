@@ -1,2 +1,2 @@
-/event/:id
-/event/:id/register
+/evnet /event/:id
+/event /event/:id/register
