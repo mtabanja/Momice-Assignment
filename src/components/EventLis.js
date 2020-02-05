@@ -106,7 +106,9 @@ export default function EventList(props) {
       {checkEvents}
       <div className="events-container">
         {!props.events ? (
-          <h1 className="check-event-text">Waiting Events To Fetch</h1>
+          <h1 className="check-event-text" style={{ textAlign: "center" }}>
+            Waiting Events To Fetch
+          </h1>
         ) : (
           props.events.map(event => (
             <Card key={event.id} className={classes.root}>

@@ -7,10 +7,10 @@ import { URL } from "../constants";
 class RegisterFormContainer extends Component {
   state = {};
 
-  onSubmit = async => {
+  onSubmit = async () => {
     const { firstName, lastName, email, dOb, hobbies, gender } = this.state;
     const eventId = this.props.match.params.id;
-    request
+    await request
       .post(`${URL}/guest`)
       .send({ firstName, lastName, email, dOb, hobbies, gender, eventId })
       .catch(console.error);

@@ -27,7 +27,7 @@ class EventListContainer extends Component {
   onSubmit = async event => {
     const { name, picture, description } = this.state;
 
-    request
+    await request
       .post(`${URL}/event`)
       .send({ name, picture, description })
       .catch(console.error);

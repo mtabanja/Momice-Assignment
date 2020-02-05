@@ -6,8 +6,6 @@ import { URL } from "../constants";
 
 import { Link } from "react-router-dom";
 
-// import { Col, Row, Container } from "react-bootstrap";
-
 class GuestList extends Component {
   componentDidMount = () => {
     const eventId = this.props.match.params.id;
